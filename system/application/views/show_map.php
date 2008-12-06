@@ -20,7 +20,7 @@ include("head_code.php")
 
 <body>
 <?php
-	include("header.php");
+	include("header_minimal.php");
 ?>
 <?php
 	print_image_map_body($map);

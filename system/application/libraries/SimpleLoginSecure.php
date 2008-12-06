@@ -35,7 +35,7 @@ define('PHPASS_HASH_PORTABLE', false);
 class SimpleLoginSecure
 {
 	var $CI;
-	var $user_table = 'users';
+	var $user_table = 'fwl_users';
 
 	/**
 	 * Create a user account
@@ -128,8 +128,17 @@ class SimpleLoginSecure
 			//Create a fresh, brand new session
 			$this->CI->session->sess_create();
 
-			$this->CI->db->simple_query('UPDATE ' . $this->user_table  . ' SET user_last_login = NOW() WHERE user_id = ' . $user_data['user_id']);
+			
+			// Replaced by reading http://codeigniter.com/forums/viewthread/96482/
+			
+			//$this->CI->db->simple_query('UPDATE ' . $this->user_table  . ' SET user_last_login = NOW() WHERE user_id = ' . $user_data['user_id']);
+			
+			// update last login
+			$this->CI->db->where('user_id', $user_data['user_id']);
+			$this->CI->db->set('user_last_login', 'NOW()', FALSE);
+			$this->CI->db->update($this->user_table); 
 
+			
 			//Set session data
 			unset($user_data['user_pass']);
 			$user_data['user'] = $user_data['user_name']; // for compatibility with Simplelogin

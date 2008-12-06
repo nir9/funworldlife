@@ -1,7 +1,17 @@
-<div align="center">
-	<a href="welcome.php"><img src="<?php echo base_url(); ?>images/logo.png"></a>		
-</div>	
-<div align="center" style="background: yellow; width: 970;" dir="rtl">
-<a href="login.php"><b>התחברות</b></a>
- <a href="register.php"><b>הרשמה</b></a>
-</div>
+<html>
+	<head>
+<?php
+include("head_code.php")
+?>
+	<title><?php print $title; ?></title>
+ 	
+	<style type="text/css">
+		
+	</style>
+		
+	</head>
+
+<body>
+<?php
+	include("header_minimal.php");
+?>
