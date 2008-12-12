@@ -10,7 +10,7 @@
 	<body>
 
 		<div dir='rtl' align="center">
-		<?php echo $message; ?>
+		<font color="red"><b><?php echo $message; ?></b></font>
 		<br>
 		<input type="submit" onclick="window.location='javascript:history.back(-1)'" value="חזרה לעמוד הקודם -->">
 	
