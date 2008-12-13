@@ -14,11 +14,13 @@
 		דואר אלקטרוני: <?php echo form_input($email); ?><br>
 		שם פרטי: <?php echo form_input($fname); ?><br>
 		שם משפחה: <?php echo form_input($lname); ?><br>
+<!--
 		תאריך לידה:&nbsp;
 		יום:<?php echo form_dropdown($day['name'], $day['options']) ?>&nbsp;
 		חודש:<?php echo form_dropdown($month['name'], $month['options']) ?>&nbsp;
 		שנה:<?php echo form_dropdown($year['name'], $year['options']) ?>&nbsp;<br>
 		ארץ לידה:<?php echo form_dropdown($country['name'], $country['options']) ?>
+-->
 		&nbsp;<br>
 		<?php echo form_submit('submit', 'הרשמה'); ?>
 		<input type='reset' value='אפס טופס'>

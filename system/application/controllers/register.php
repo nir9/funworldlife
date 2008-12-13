@@ -38,9 +38,11 @@ class Register extends Controller
 		$fname = $this->input->post('fname');
 		$lname = $this->input->post('lname');
 		
+/*
 		$day = $this->input->post('day');
 		$month = $this->input->post('month');
 		$year = $this->input->post('year');
+*/
 		
 		$country = $this->input->post('country');
 		
@@ -72,6 +74,7 @@ class Register extends Controller
 		{
 			return  $this->_error( "שם משפחה לא מלא");
 		}
+/*
 		if (!$day || $day == "")
 		{
 			return  $this->_error( "יום בתאריך לידה לא מלא");
@@ -80,6 +83,7 @@ class Register extends Controller
 		{
 			return  $this->_error( "חודש בתאריך לידה לא מלא");
 		}
+*/
 		if (!$fname || $fname == "")
 		{
 			return  $this->_error( "שנה בתאריך לידה לא מלא");
@@ -105,14 +109,12 @@ class Register extends Controller
 		$health = $this->config->item("FWL_starting_health");
 		
 		$this->UsersInfo->add_user_info($id, $fname, $lname, $email, 
-			$money, (int)$day, (int)$month, (int)$year, $health);
+			$money, 1, 1, 2000, $health);
 		
 		// send email!!!!
 		
-		
 		//He Regitsered Yey Yey
-		//echo "המשתמש נרשם בהצלחה" . "<BR>";
-		redirect("/login");
+		redirect("/registerthanks");
 	}
 	
 	function _error($message)
