@@ -113,9 +113,7 @@ class Register extends Controller
 		
 		// send email!!!!
 		
-		
 		//He Regitsered Yey Yey
-		//echo "המשתמש נרשם בהצלחה" . "<BR>";
 		redirect("/registerthanks");
 	}
 	
