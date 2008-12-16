@@ -25,10 +25,10 @@
 		<br>
 		עם יש תקלה בהרשמה אז תיפנו לאימייל שלנו <a href="mailto:admin@funworldlife.com">admin@funworldlife.com </a>
 		<br>
-		<a href="register"><b><img src="../images/reg.png" border="0"></b></a>
+		
 		</fieldset>
 <?php echo form_close(); ?>
-		
+		<a href="register"><img src="<?php print base_url() ?>register_login.png"></a>
 		</div>
 				<br>
 		<br>

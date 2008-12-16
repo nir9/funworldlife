@@ -9,7 +9,6 @@
 	$data["title"] = "Error | שגיאה";
 	$this->load->view("header.php", $data);
 ?>
-<img src="../../Error.png">
 		<div dir='rtl' align="center">
 		<br>
 		<?php echo $message; ?>
