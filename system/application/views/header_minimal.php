@@ -1,5 +1,5 @@
 <div align="center">
-	<a href="welcome"><img src="<?php echo base_url(); ?>images/logo.png"></a>		
+	<a href="welcome"><img src="<?php echo base_url(); ?>images/logo_party.png"></a>		
 </div>	
 
 <?php
