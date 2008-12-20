@@ -36,6 +36,9 @@ class SimpleLoginSecure
 {
 	var $CI;
 	var $user_table = 'fwl_users';
+	var $error_code = 0;
+	var $ERROR_USER_ALREADY_EXISTS = -1;
+	var $ERROR_DATABASE_INSERT = -2;
 
 	/**
 	 * Create a user account
@@ -50,6 +53,7 @@ class SimpleLoginSecure
 	{
 		$this->CI =& get_instance();
 		
+		$this->error_code = 0;		
 
 
 		//Make sure account info was sent
@@ -61,8 +65,10 @@ class SimpleLoginSecure
 		$this->CI->db->where('user_name', $user_name); 
 		$query = $this->CI->db->getwhere($this->user_table);
 		
-		if ($query->num_rows() > 0) //user_name already exists
+		if ($query->num_rows() > 0) { //user_name already exists
+			$this->error_code = $this->ERROR_USER_ALREADY_EXISTS;
 			return false;
+		}
 
 		//Hash user_pass using phpass
 		$hasher = new PasswordHash(PHPASS_HASH_STRENGTH, PHPASS_HASH_PORTABLE);
@@ -78,8 +84,10 @@ class SimpleLoginSecure
 
 		$this->CI->db->set($data); 
 
-		if(!$this->CI->db->insert($this->user_table)) //There was a problem! 
+		if(!$this->CI->db->insert($this->user_table)) { //There was a problem! 
+			$this->error_code = $this->ERROR_DATABASE_INSERT;
 			return false;						
+		}
 				
 		if($auto_login)
 			$this->login($user_name, $user_pass);
