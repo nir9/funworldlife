@@ -15,4 +15,7 @@ var l=confirm("האם להיתנתק?")
 <div align="center" style="background: yellow; width: 970;" dir="rtl">
 	<a onclick='ASK("<?php echo site_url(); ?>/login/logout");return false;' href='#'>
 	<b>התנתקות</b></a>
+	
+	כסף:<?php print $user_info->money; ?>&nbsp;|&nbsp;
+	בריאות:<?php print $user_info->health; ?>
 </div>

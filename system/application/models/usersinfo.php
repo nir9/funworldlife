@@ -29,8 +29,8 @@ class UsersInfo extends Model
 	function get_user_info($userid)
 	{
 		$this->db->select("*");
-		$this->db->from($table_name);
-		$this->db->where('id', $userid);
+		$this->db->from(self::$table_name);
+		$this->db->where('user_id', $userid);
 		$query = $this->db->get();
 		return $query->row(); 	
 	}

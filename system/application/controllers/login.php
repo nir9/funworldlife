@@ -1,10 +1,10 @@
 <?php
 
-class Login extends Controller 
+class Login extends MY_Controller 
 {	
 	function Login()
 	{
-		parent::Controller();
+		parent::MY_Controller();
 		$this->load->helper(array('form', 'url'));
 		$this->referer = "";
 	}
@@ -17,7 +17,7 @@ class Login extends Controller
 		$data["title"] = "התחברות לעיר הוירטואלית";
 		$data["username"] = $this->_form_array("username", 20);
 		$data["password"] = $this->_form_array("password", 20);
-		$this->load->view('login_view', $data);
+		$this->display_view('login_view', $data);
 	}
 	
 	function submit()
@@ -54,7 +54,7 @@ class Login extends Controller
 	function _error($message)
 	{
 		$data['message'] = $message;
-		$this->load->view('error_view', $data);
+		$this->display_view('error_view', $data);
 	}
 	
 	function _form_array($name, $size)

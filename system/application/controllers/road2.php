@@ -6,7 +6,7 @@ class Road2 extends Funworldlife {
 	{
 		global $map;
 		global $map_file;
-		parent::show_map('Road2', $map, $map_file);
+		parent::show_map('Second Road | רחוב שני', $map, $map_file);
 	}
 }
 

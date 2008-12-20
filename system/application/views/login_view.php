@@ -4,7 +4,7 @@
 		<div dir='rtl' align="center">
 	
 		<?php echo form_open('login/submit'); ?>
-		<img src="../images/logintitle.png">
+		<img src='<?php print base_url(); ?>images/Login Main Image.png'>
 		<fieldset>
 		<br>
 		<br>
@@ -28,7 +28,7 @@
 		
 		</fieldset>
 <?php echo form_close(); ?>
-		<a href="register"><img src="<?php print base_url() ?>register_login.png"></a>
+		<a href="register"><img src="<?php print base_url() ?>images/register_login.png"></a>
 		</div>
 				<br>
 		<br>

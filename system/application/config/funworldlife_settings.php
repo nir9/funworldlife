@@ -3,4 +3,5 @@
 	$config["FWL_starting_health"] = 100;
 	$config["FWL_starting_moeny"] = 100;
 
+	$config["FWL_images"] = base_url() . "/images/";
 ?>

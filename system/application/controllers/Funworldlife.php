@@ -1,10 +1,10 @@
 <?php
 
-class Funworldlife extends Controller {
+class Funworldlife extends MY_Controller {
 
 	function Funworldlife()
 	{
-		parent::Controller();	
+		parent::MY_Controller();	
 		$this->load->helper('url');
 	}
 	
@@ -32,7 +32,7 @@ class Funworldlife extends Controller {
 		$data['map'] = $map;
 		$data['map_file'] = $map_file;
 		$data["images_path"] = base_url() . "images/";
-		$this->load->view('show_map', $data);
+		$this->display_view('show_map', $data);
 	}
 }
 

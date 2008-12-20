@@ -1,10 +1,10 @@
 <?php
 
-class Register extends Controller 
+class Register extends MY_Controller 
 {
 	function Register()
 	{
-		parent::Controller();	
+		parent::MY_Controller();
 		$this->load->helper(array('form', 'url'));
 		$this->load->library('form_validation');
 	}
@@ -26,7 +26,7 @@ class Register extends Controller
 		
 		$data['country'] = $this->_countries("country");
 		
-		$this->load->view('register_view', $data);
+		$this->display_view('register_view', $data);
 	}
 	
 	function submit()
@@ -99,7 +99,18 @@ class Register extends Controller
 		$id = $this->User->add_user($username, $password);
 */
 
-		$this->simpleloginsecure->create($username, $password);
+		$creationSuccess = 
+			$this->simpleloginsecure->create($username, $password);
+		
+		if (!$creationSuccess) {
+			$errorCode = $this->simpleloginsecure->error_code;
+			if ($errorCode == $this->simpleloginsecure->ERROR_USER_ALREADY_EXISTS) {
+				return $this->_error("המשתמש כבר קיים");
+			}
+			else if ($errorCode == $this->simpleloginsecure->ERROR_DATABASE_INSERT) {
+				return $this->_error("תקלה בהוספת המשתמש לבסיס הנתונים");
+			}			
+		}
 		
 		$id = $this->session->userdata('user_id');
 		
@@ -120,7 +131,7 @@ class Register extends Controller
 	function _error($message)
 	{
 		$data['message'] = $message;
-		$this->load->view('error_view', $data);
+		$this->display_view('error_view', $data);
 	}
 	
 	function _form_array($name, $size)

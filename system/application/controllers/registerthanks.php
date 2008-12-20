@@ -1,5 +1,5 @@
 <?php
-class Registerthanks extends Controller 
+class Registerthanks extends MY_Controller 
 {
 	function index()
 	{

@@ -37,7 +37,7 @@ $map = array(
 	),	
 	array( 
 		"id" =>  "arrow_right", 
-		"href" => "2road.php", 
+		"href" => "road2", 
 		"title" => "לרחוב הבא",
 		"left" => 853, 
 		"top" => 204, 
