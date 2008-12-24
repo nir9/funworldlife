@@ -80,15 +80,6 @@ $map = array(
 		"width" => 104, 
 		"height" => 168
 	),
-	array( 
-		"id" =>  "arrow_left", 
-		"href" => "arrow_left.php", 
-		"title" => "לרחוב הקודם",
-		"left" => 0, 
-		"top" => 207, 
-		"width" => 79, 
-		"height" => 49
-	),
 	
 );
 

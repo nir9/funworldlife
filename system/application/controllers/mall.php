@@ -19,7 +19,7 @@ $map_file = array (
 $map = array(
 	array( 
 		"id" =>  "guard", 
-		"href" => "guard.php", 
+		"href" => "guard", 
 		"title" => "שומר",
 		"left" => 740, 
 		"top" => 344, 
@@ -29,7 +29,7 @@ $map = array(
 	
 	array( 
 		"id" =>  "bank", 
-		"href" => "bank.php", 
+		"href" => "bank", 
 		"title" => "בנק",
 		"left" => 339, 
 		"top" => 386, 
@@ -39,7 +39,7 @@ $map = array(
 	
 	array( 
 		"id" =>  "shop_food", 
-		"href" => "shop_food.php", 
+		"href" => "shop_food", 
 		"title" => "מזונה - חנות מזון",
 		"left" => 5, 
 		"top" => 42, 
@@ -49,7 +49,7 @@ $map = array(
 	
 	array( 
 		"id" =>  "shop_electric", 
-		"href" => "shop_electric.php", 
+		"href" => "shop_electric", 
 		"title" => "אלקטריק - חנות אלקטרוניקה",
 		"left" => 332, 
 		"top" => 42, 
@@ -59,13 +59,23 @@ $map = array(
 	
 	array( 
 		"id" =>  "shop_pets", 
-		"href" => "shop_pets.php", 
+		"href" => "shop_pets", 
 		"title" => "חיות - חנות חיות",
 		"left" => 671, 
 		"top" => 61, 
 		"width" => 153, 
 		"height" => 200 
 	),	
+	
+		array( 
+		"id" =>  "back", 
+		"href" => "welcome", 
+		"title" => "חזרה לרחוב",
+		"left" => 11, 
+		"top" => 279, 
+		"width" => 97, 
+		"height" => 57 
+	),
 );
 
 ?>
