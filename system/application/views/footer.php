@@ -6,5 +6,5 @@ Site Then You Will Get 50 Fun-Coins(Funworldlife Virtual Money) If You Will Tell
 <br>
 האתר הזה לא מוכן לגימרה עם יש תקלה או בעיה אנא שלחו אימייל ואנחנו נשמח לתקן את הבעיה 
 אתם תקבלו 50 Fun-Coins עם תשלחו לנו תקלה או בעיה באתר  <a href="mailto:admin@funworldlife.com">לשליחת תקלה ליחצו כאן</a>
-<p>Funworldlife © 2006 - 2008</p>
+<p>Funworldlife © 2006 - 2009</p>
 </div>
