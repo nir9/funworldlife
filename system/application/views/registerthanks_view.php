@@ -1,6 +1,8 @@
 ﻿
 <?php 
-	$this->load->view("header.php", $title) 
+	$data["title"] = $title;
+	$data["show_not_logged"] = true;
+	$this->load->view("header.php", $data) 
 ?>
 
 		<div dir='rtl' align="center">

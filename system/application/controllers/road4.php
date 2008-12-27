@@ -6,7 +6,7 @@ class Road4 extends Funworldlife {
 	{
 		global $map;
 		global $map_file;
-		parent::show_map('Forth Road | רחוב רביעי', $map, $map_file');
+		parent::show_map('Forth Road | רחוב רביעי', $map, $map_file);
 	}
 }
 

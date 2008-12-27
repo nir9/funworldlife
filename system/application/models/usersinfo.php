@@ -1,11 +1,10 @@
 <?php
 class UsersInfo extends Model 
-{
-	private static $table_name = "fwl_users_info";
-	
+{	
     function UsersInfo()
     {     
         parent::Model();
+		$this->table_name = "fwl_users_info";
     }
 
 	function add_user_info($id, $fname, $lname, $email, $money, 
@@ -23,13 +22,13 @@ class UsersInfo extends Model
 			'health' => $health
 		);
 		
-		$this->db->insert(self::$table_name, $data);
+		$this->db->insert($this->table_name, $data);
 	}
 	
 	function get_user_info($userid)
 	{
 		$this->db->select("*");
-		$this->db->from(self::$table_name);
+		$this->db->from($this->table_name);
 		$this->db->where('user_id', $userid);
 		$query = $this->db->get();
 		return $query->row(); 	

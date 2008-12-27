@@ -35,7 +35,7 @@ print "<div id='image'>\n";
 foreach ($map as $piece)
 {
 	$id = $piece["id"];
-	$href = $piece["href"];
+	$href = site_url() . "/" . $piece["href"];
 	$title = $piece["title"];
 	print "<a id='$id' href='$href' title='$title'></a>\n";
 }
