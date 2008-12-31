@@ -19,7 +19,7 @@ $map_file = array (
 $map = array(
 	array( 
 		"id" =>  "tree1", 
-		"href" => "tree1.php", 
+		"href" => "tree1", 
 		"title" => "טיפוס על עץ",
 		"left" => 620, 
 		"top" => 193, 
@@ -28,7 +28,7 @@ $map = array(
 	),
 	array( 
 		"id" =>  "school", 
-		"href" => "school.php", 
+		"href" => "school", 
 		"title" => "בית הספר",
 		"left" => 696, 
 		"top" => 404, 
@@ -55,7 +55,7 @@ $map = array(
 	),	
 	array( 
 		"id" =>  "tree2", 
-		"href" => "tree2.php", 
+		"href" => "tree2", 
 		"title" => "טיפוס על העץ",
 		"left" => 235, 
 		"top" => 403, 
@@ -64,7 +64,7 @@ $map = array(
 	),
 		array( 
 		"id" =>  "postoffice", 
-		"href" => "postoffice.php", 
+		"href" => "postoffice", 
 		"title" => "דואר העיר",
 		"left" => 109, 
 		"top" => 414, 
@@ -73,7 +73,7 @@ $map = array(
 	),
 	array( 
 		"id" =>  "tree3", 
-		"href" => "tree3.php", 
+		"href" => "tree3", 
 		"title" => "טיפוס על העץ",
 		"left" => 0, 
 		"top" => 400, 
