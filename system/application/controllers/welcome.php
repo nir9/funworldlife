@@ -18,8 +18,8 @@ $map_file = array (
 
 $map = array(
 	array( 
-		"id" =>  "tree1", 
-		"href" => "tree1", 
+		"id" =>  "tree", 
+		"href" => "tree", 
 		"title" => "טיפוס על עץ",
 		"left" => 620, 
 		"top" => 193, 
@@ -55,7 +55,7 @@ $map = array(
 	),	
 	array( 
 		"id" =>  "tree2", 
-		"href" => "tree2", 
+		"href" => "tree", 
 		"title" => "טיפוס על העץ",
 		"left" => 235, 
 		"top" => 403, 
@@ -73,7 +73,7 @@ $map = array(
 	),
 	array( 
 		"id" =>  "tree3", 
-		"href" => "tree3", 
+		"href" => "tree", 
 		"title" => "טיפוס על העץ",
 		"left" => 0, 
 		"top" => 400, 
