@@ -8,8 +8,13 @@ class MY_Controller extends Controller {
   
 		if($this->session->userdata('logged_in')) {
 			$user_id = $this->session->userdata('user_id');
-			$this->load->model('UsersInfo', 'UsersInfo');
+			
+			$this->load->model('UsersInfo');
 			$this->global_data["user_info"] = $this->UsersInfo->get_user_info($user_id);
+			
+			$this->load->model('UsersJobs');
+			$this->global_data["job_name"] = $this->UsersJobs->get_user_job($user_id);
+			
 		}
         //$this->load->model('Twitter_model', 'twitter');   
         //$this->global_data['twitter'] = $this->twitter->get_twitter_status();   
