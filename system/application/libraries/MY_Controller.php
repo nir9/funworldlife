@@ -24,9 +24,20 @@ class MY_Controller extends Controller {
   
     // create a simple wrapper for the CI load->view() method   
     // but first, merge the global and local data into one array   
-    function display_view($view, $local_data = array()) {   
+    function display_view($view, $local_data = array()) 
+	{   
         $data = array_merge($this->global_data, $local_data);
         return $this->load->view($view, $data);   
-    }   
+    }
+	
+	function get_job_name()
+	{
+		if (isset($this->global_data["job_name"])) {
+			return $this->global_data["job_name"];
+		}
+		else {
+			return NULL;
+		}
+	}
 }  
 ?>
