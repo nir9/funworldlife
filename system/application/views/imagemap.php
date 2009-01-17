@@ -29,9 +29,26 @@ print "-->\n";
 
 }
 
-function print_image_map_body($map)
+function print_additional_css($additionals)
+{
+print "<!--\n";
+foreach ($additionals as $additional)
+{
+	print $additional;
+	print "\n\n";
+}
+print "-->\n";
+}
+
+function print_image_map_body($map, $additionals)
 {
 print "<div id='image'>\n";
+foreach ($additionals as $additional)
+{
+	print $additional;
+	print "\n";
+}
+
 foreach ($map as $piece)
 {
 	$id = $piece["id"];

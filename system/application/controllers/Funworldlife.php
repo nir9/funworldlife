@@ -32,6 +32,8 @@ class Funworldlife extends MY_Controller {
 		$data['map'] = $map;
 		$data['map_file'] = $map_file;
 		$data["images_path"] = base_url() . "images/";
+		$data["additional_css"] = array();
+		$data["additional_body"] = array();
 		$this->display_view('show_map', $data);
 	}
 }

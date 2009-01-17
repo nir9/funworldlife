@@ -13,6 +13,7 @@ include("head_code.php")
 	<?php
 		print_image_map_file($map_file, $images_path);
 		print_image_map_css($map);
+		print_additional_css($additional_css);
 	?>
 	</style>
 		
@@ -23,7 +24,8 @@ include("head_code.php")
 	include("header_minimal.php");
 ?>
 <?php
-	print_image_map_body($map);
+	print_image_map_body($map, $additional_body);
+	
 ?>
 <?php
 	include("footer.php");
