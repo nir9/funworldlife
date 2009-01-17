@@ -45,7 +45,8 @@ class Funworldlife extends MY_Controller {
 	{
 		if ( $this->get_job_name() == "CleanStreet" )
 		{
-			$result = rand(1, 5);
+			$clean_street_chance = 5;
+			$result = rand(1, $clean_street_chance);
 			if ($result != 1) {
 				return;
 			}
