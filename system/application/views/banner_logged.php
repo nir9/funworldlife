@@ -1,15 +1,8 @@
 <script type="text/javascript">
-function ASK(url)
-{
-var l=confirm("האם להיתנתק?")
-  if (l==true)
-	{
-	window.location=url
-	}
-  else
-	{
-	}
-}
+function roll_over(img_name, img_src)
+   {
+   document[img_name].src = img_src;
+   }
 </script>
 
 <div align="center" style="background: yellow; width: 970;" dir="rtl">
@@ -18,6 +11,9 @@ var l=confirm("האם להיתנתק?")
 	כסף:<?php print $user_info->money; ?>&nbsp;|&nbsp;
 	בריאות:<?php print $user_info->health; ?>
 		
-	<a onclick='ASK("<?php echo site_url(); ?>/login/logout");return false;' href='#'>
-	<b>התנתקות</b></a>
+<a href="<?php echo site_url(); ?>/login/logout" onmouseover="roll_over('התנתקות', '<?php print base_url(); ?>images/logout2.png')"
+onmouseout="roll_over('התנתקות', '<?php print base_url(); ?>images/logout1.png')">
+<IMG SRC="<?php print base_url(); ?>images/logout1.png" WIDTH="100" HEIGHT="50"
+NAME="התנתקות" BORDER="0">
+</A>
 </div>
