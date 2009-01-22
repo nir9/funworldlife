@@ -4,7 +4,7 @@
 		<div dir='rtl'>
 	
 		<?php echo form_open('register/submit'); ?>
-		
+		<img src="<?php print base_url(); ?>/images/Register_Main_Image.png">
 		<fieldset>
 	<br>
 		שם משתמש: <?php echo form_input($username); ?><br>
