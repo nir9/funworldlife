@@ -15,6 +15,21 @@ class Cleanstreet extends Funworldlife {
 		$this->load->model('UsersJobs');
 		$this->UsersJobs->set_user_job($user_id, 'CleanStreet');
 	}
+	
+	function collect()
+	{
+		// 1. Add money to account
+		// 2. Return to previous page
+		
+		$money =
+			$this->config->item("FWL_clean_street_money");
+		parent::add_money($money);
+		
+		$data = array();
+		$data['title'] = 'קיבלת כסף';
+		$data['message'] = 'קיבלת כסף';
+		$this->load->view('message_view', $data);
+	}
 }
 
 $map_file = array (

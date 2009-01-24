@@ -33,15 +33,11 @@ class UsersInfo extends Model
 		$query = $this->db->get();
 		return $query->row(); 	
 	}
-	
+
+/*	Copied from old website
+
 	function get_user_info_with_username($userid)
-	{
-		/*$this->db->select("*");
-		$this->db->from($table_name);
-		$this->db->where('id', $userid);
-		//$this->db->join($table_name, ' users.id = $table_name.id');
-		$query = $this->db->get();*/
-		
+	{	
 		$query = $this->db->query( "SELECT * FROM $table_name " .
 		"INNER JOIN users ON " . $table_name . ".id=users.id " .
 		"WHERE $table_name.id='$userid'");
@@ -68,12 +64,13 @@ class UsersInfo extends Model
 		$query = $this->db->get();
 		return $query->row(); 
 	}
+*/
 	
-	function get_money($id)
+	function get_money($user_id)
 	{
 		$this->db->select("money");
-		$this->db->from($table_name);
-		$this->db->where('id', $id);
+		$this->db->from($this->table_name);
+		$this->db->where('user_id', $user_id);
 		$query = $this->db->get();
 		
 		if ($query->num_rows() > 0) {
@@ -85,14 +82,14 @@ class UsersInfo extends Model
 		}
 	}
 	
-	function change_money($id, $money)
+	function change_money($user_id, $money)
 	{
 		$data = array(
                'money' => $money
             );
 
-		$this->db->where('id', $id);
-		$this->db->update($table_name, $data); 	
+		$this->db->where('user_id', $user_id);
+		$this->db->update($this->table_name, $data); 	
 	}
 	
 	
