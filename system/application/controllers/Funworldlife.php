@@ -63,6 +63,7 @@ class Funworldlife extends MY_Controller {
 			if ($result != 1) {
 				return;
 			}
+			$this->CleanstreetLibrary->addGarbage();
 			
 			$base_url = base_url();
 			$site_url = site_url();

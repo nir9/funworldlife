@@ -18,8 +18,17 @@ class Cleanstreet extends Funworldlife {
 	
 	function collect()
 	{
-		// 1. Add money to account
-		// 2. Return to previous page
+		// 1. Check if there's garbage
+		// 2. Add money to account
+		// 3. Return to previous page
+
+		$garbageAmount = 
+			$this->CleanstreetLibrary->garbageAmount();
+		// TODO: fixme, doesn't work, value is always 0
+		if (false && $garbageAmount == 0) {
+			echo $this->CleanstreetLibrary->garbageAmount();
+			return;
+		}
 		
 		$money =
 			$this->config->item("FWL_clean_street_money");
