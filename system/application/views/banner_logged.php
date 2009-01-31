@@ -7,7 +7,7 @@ function roll_over(img_name, img_src)
 
 <div align="center" style="background: yellow; width: 970;" dir="rtl">
 	
-	ברוך הבא Username
+	ברוך הבא <?php print $user_name; ?>&nbsp;|&nbsp;
 	כסף:<?php print $user_info->money; ?>&nbsp;|&nbsp;
 	בריאות:<?php print $user_info->health; ?>
 		

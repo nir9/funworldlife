@@ -10,7 +10,10 @@ class MY_Controller extends Controller {
 			$user_id = $this->session->userdata('user_id');
 			
 			$this->load->model('UsersInfo');
-			$this->global_data["user_info"] = $this->UsersInfo->get_user_info($user_id);
+			$this->global_data["user_info"] = 
+				$this->UsersInfo->get_user_info($user_id);
+			$this->global_data["user_name"] = 
+				$user_id = $this->session->userdata('user_name');
 			
 			$this->load->model('UsersJobs');
 			$this->global_data["job_name"] = $this->UsersJobs->get_user_job($user_id);
