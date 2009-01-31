@@ -6,9 +6,11 @@
 ?>
 
 		<div dir='rtl' align="center">
-		CONTACT US<BR>
-		<h1><font color="red">תודה רבה שנרשמת לאתר שלנו מקווים שתהנו</font></h1>
-		<input type="submit" onclick="window.location='<?php print site_url(); ?>'" value="לחץ כאן כדי להתחיל לשחק">
+		<h1>צור קשר</h1>
+אימייל: <a href="mailto:admin@funworldlife.com">admin@funworldlife.com</a>
+
 		</div>
+		<br><hr>
+		<?php $this->load->view("footer.php", $title) ?>
 	</body>
 </html>

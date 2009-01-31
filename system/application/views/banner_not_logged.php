@@ -33,4 +33,15 @@ onmouseout="roll_over('צורקשר', '<?php print base_url(); ?>images/contact1
 <IMG SRC="<?php print base_url(); ?>images/contact1.png" WIDTH="100" HEIGHT="50"
 NAME="צורקשר" BORDER="0">
 </A>
+<a href="<?php echo site_url(); ?>/map" onmouseover="roll_over('מפה', '<?php print base_url(); ?>images/map2.png')"
+onmouseout="roll_over('מפה', '<?php print base_url(); ?>images/map1.png')">
+<IMG SRC="<?php print base_url(); ?>images/map1.png" width="100" HEIGHT="50"
+NAME="מפה" BORDER="0">
+</a>
+
+<a href="<?php echo site_url(); ?>/mainpage" onmouseover="roll_over('דף הראשי', '<?php print base_url(); ?>images/Main_Page2.png')"
+onmouseout="roll_over('דף הראשי', '<?php print base_url(); ?>images/Main_Page1.png')">
+<IMG SRC="<?php print base_url(); ?>images/Main_Page1.png" width="100" HEIGHT="50"
+NAME="דף הראשי" BORDER="0">
+</a>
 </div>

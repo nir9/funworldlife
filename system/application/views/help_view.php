@@ -6,9 +6,20 @@
 ?>
 
 		<div dir='rtl' align="center">
-		HRL:<BR>
-		<h1><font color="red">תודה רבה שנרשמת לאתר שלנו מקווים שתהנו</font></h1>
-		<input type="submit" onclick="window.location='<?php print site_url(); ?>'" value="לחץ כאן כדי להתחיל לשחק">
+		<h1>עזרה</h1>
+		<br>
+<hr>שאלה:
+		איך משיגים Fun-Coins(הכסף של האתר)?
+<br>תשובה:
+ עם אתה רוצה להסיג Fun-Coins אז אתה
+	 צריך או לעבוד בעבודות וירטואליות או למצוא כסף על הריצפה
+	 <hr>
+שאלה:
+	 <br>
+תשובה:
+
+<hr>
+		<?php $this->load->view("footer.php", $title) ?>
 		</div>
 	</body>
 </html>
