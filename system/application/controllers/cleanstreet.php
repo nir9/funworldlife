@@ -6,7 +6,7 @@ class Cleanstreet extends Funworldlife {
 	{
 		global $map;
 		global $map_file;
-		parent::show_map('Clean Street', $map, $map_file);
+		parent::show_map('Funworldlife - ניקוי רחובות', $map, $map_file);
 	}
 	
 	function acceptjob()

@@ -6,7 +6,7 @@ class Road3 extends Funworldlife {
 	{
 		global $map;
 		global $map_file;
-		parent::show_map('Third Road | רחוב שלישי', $map, $map_file);
+		parent::show_map('Funworldlife - רחוב שלישי', $map, $map_file);
 	}
 }
 

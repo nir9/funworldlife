@@ -7,7 +7,9 @@
 
 		<div dir='rtl' align="center">
 		<h1>צור קשר</h1>
-אימייל: <a href="mailto:admin@funworldlife.com">admin@funworldlife.com</a>
+		שגיאות,תקלות,באגים שלחו אלינו ל
+		<a href="mailto:bugs@funworldlife.com">bugs@funworldlife.com</a>
+		<br>
 
 		</div>
 		<br><hr>

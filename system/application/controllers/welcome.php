@@ -6,7 +6,7 @@ class Welcome extends Funworldlife {
 	{
 		global $map;
 		global $map_file;
-		parent::show_map('Welcome', $map, $map_file);
+		parent::show_map('Funworldlife - ברוכים הבאים', $map, $map_file);
 	}
 }
 

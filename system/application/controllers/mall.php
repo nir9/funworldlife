@@ -6,7 +6,7 @@ class Mall extends Funworldlife {
 	{
 		global $map;
 		global $map_file;
-		parent::show_map('Mall', $map, $map_file);
+		parent::show_map('Funworldlife - קניון', $map, $map_file);
 	}
 }
 

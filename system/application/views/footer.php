@@ -1,10 +1,14 @@
-<div align="center" dir="rtl" class="footer">
-This website is beta if you see a Bug,Glich or a problem please send a Email a we will fix the problem
-<a href="mailto:admin@funworldlife.com">to send an Email click here</a> And If You Are Registerd To The Web
-Site Then You Will Get 50 Fun-Coins(Funworldlife Virtual Money) If You Will Tell Us. Thank You (: 
-<br>
-<br>
-האתר הזה לא מוכן לגימרה עם יש תקלה או בעיה אנא שלחו אימייל ואנחנו נשמח לתקן את הבעיה 
-אתם תקבלו 50 Fun-Coins עם תשלחו לנו תקלה או בעיה באתר  <a href="mailto:admin@funworldlife.com">לשליחת תקלה ליחצו כאן</a>
-<p>2006 - 2009 Funworldlife ©</p>
-</div>
+<br><div align="center" dir="rtl" class="footer" style="background: yellow; width: 970;">
+<a href="<?php echo site_url(); ?>/help" onmouseover="roll_over('עזרה', '<?php print base_url(); ?>images/help2.png')"
+onmouseout="roll_over('עזרה', '<?php print base_url(); ?>images/help1.png')">
+<IMG SRC="<?php print base_url(); ?>images/help1.png" WIDTH="100" HEIGHT="50"
+NAME="עזרה" BORDER="0">
+</A>
+
+<a href="<?php echo site_url(); ?>/contactus" onmouseover="roll_over('צורקשר', '<?php print base_url(); ?>images/contact2.png')"
+onmouseout="roll_over('צורקשר', '<?php print base_url(); ?>images/contact1.png')">
+<IMG SRC="<?php print base_url(); ?>images/contact1.png" WIDTH="100" HEIGHT="50"
+NAME="צורקשר" BORDER="0">
+</A></div>
+<div align="center" dir="ltr" class="footer" style="background: yellow; width: 970;">2006 - 2009</div>
+<div align="center" dir="rtl" class="footer" style="background: yellow; width: 970;"> Funworldlife ©</div>

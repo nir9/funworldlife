@@ -14,7 +14,7 @@ class Login extends MY_Controller
 		$this->referer = $this->input->server('HTTP_REFERER');
 	
 		$data = array();
-		$data["title"] = "התחברות לעיר הוירטואלית";
+		$data["title"] = "Funworldlife - התחברות";
 		$data["username"] = $this->_form_array("username", 20);
 		$data["password"] = $this->_form_array("password", 20);
 		$this->display_view('login_view', $data);

@@ -4,7 +4,7 @@ class Help extends MY_Controller
 	function index()
 	{
 		$data = array();
-		$data["title"] = "Help | עזרה";
+		$data["title"] = "Funworldlife - עזרה";
 		$this->load->view("help_view", $data);
 	}
 }

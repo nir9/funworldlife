@@ -5,7 +5,7 @@ class TreeComingSoon extends Funworldlife {
 	{
 		global $map;
 		global $map_file;
-		parent::show_map('Tree Coming Soon', $map, $map_file);
+		parent::show_map('Funworldlife - טיפוס על העץ', $map, $map_file);
 	}
 }
 

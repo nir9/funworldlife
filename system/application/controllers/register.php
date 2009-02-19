@@ -13,7 +13,7 @@ class Register extends MY_Controller
 	{
 		$data = array();
 		$size = 30;
-		$data["title"] = "הרשמה לעיר הוירטואלית";
+		$data["title"] = "Funworldlife - הרשמה";
 		$data['username'] = $this->_form_array('username', $size);
 		$data['password'] = $this->_form_array('password', $size);
 		$data['email'] = $this->_form_array('email', $size);

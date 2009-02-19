@@ -6,7 +6,7 @@ class Pikework extends Funworldlife {
 	{
 		global $map;
 		global $map_file;
-		parent::show_map('Pick work | בית בחירת עבודה', $map, $map_file);
+		parent::show_map('Funworldlife - בית בחירת עבודה', $map, $map_file);
 	}
 }
 

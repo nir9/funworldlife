@@ -6,7 +6,7 @@ class Map extends Funworldlife {
 	{
 		global $map;
 		global $map_file;
-		parent::show_map('מפת העולם של האתר', $map, $map_file);
+		parent::show_map('Funworldlife - מפת העולם של האתר', $map, $map_file);
 	}
 }
 
