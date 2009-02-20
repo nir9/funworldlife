@@ -44,18 +44,21 @@ class Login extends MY_Controller
 	
 	function redirect_to_referer()
 	{
-		if ($this->referer != "") {
-			redirect($this->referer);
+		$no_referer = $this->referer == "";
+		$referer_is_me = $this->referer == site_url() . "login";
+		
+		if ($no_referer || $referer_is_me) {
+			redirect("/welcome");			
 		}
 		else {
-			redirect("/welcome");
+			redirect($this->referer);
 		}
 	}
 	
 	function logout()
 	{
 		$this->simpleloginsecure->logout();
-		$this->redirect_to_mainPage();
+		$this->redirect_to_main_page();
 	}
 	
 	function _error($message)

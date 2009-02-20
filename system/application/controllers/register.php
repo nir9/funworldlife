@@ -12,7 +12,7 @@ class Register extends MY_Controller
 	function index()
 	{
 		if ($this->is_user_connected()) {
-			$this->redirect_to_mainPage();
+			$this->redirect_to_main_page();
 		}
 	
 		$data = array();

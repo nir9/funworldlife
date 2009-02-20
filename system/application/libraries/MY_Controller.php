@@ -57,7 +57,7 @@ class MY_Controller extends Controller {
 		return $this->session->userdata('logged_in');
 	}
 	
-	function redirect_to_mainPage()
+	function redirect_to_main_page()
 	{
 		redirect("/welcome");
 	}
