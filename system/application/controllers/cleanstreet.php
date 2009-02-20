@@ -10,11 +10,17 @@ class Cleanstreet extends Funworldlife {
 		parent::show_map('Funworldlife - ניקוי רחובות', $map, $map_file);
 	}
 	
-	function acceptjob()
+	function acceptjob($yesNo)
 	{
-		$user_id = $this->session->userdata('user_id');
-		$this->load->model('UsersJobs');
-		$this->UsersJobs->set_user_job($user_id, 'CleanStreet');
+		if ($yesNo == "yes") {
+			$user_id = $this->session->userdata('user_id');
+			$this->load->model('UsersJobs');
+			$this->UsersJobs->set_user_job($user_id, 'CleanStreet');
+			$this->redirect_to_mainPage();
+		}
+		else {
+			redirect("/pikework");
+		}
 	}
 	
 	function collect()
@@ -40,51 +46,32 @@ class Cleanstreet extends Funworldlife {
 }
 
 $map_file = array (
-	"file" => "PickWork.png",
+	"file" => "Cleanstreet_Admin.png",
 	"width" => 945,
 	"height" => 568
 );
 
 $map = array(
 	array( 
-		"id" =>  "cleanstreet", 
-		"href" => "cleanstreet", 
+		"id" =>  "yes", 
+		"href" => "cleanstreet/acceptjob/yes", 
 		"title" => "ניקוי רחובות( העבודה הכי פשוטה) ",
 		"left" => 139, 
 		"top" => 316, 
 		"width" => 614, 
-		"height" => 252 
+		"height" => 252
 	),
 	
 	array( 
-		"id" =>  "inbattle" ,
-		"href" => "battle", 
+		"id" =>  "no" ,
+		"href" => "cleanstreet/acceptjob/no", 
 		"title" => "לחץ כאן כדי להיכנס למלחמה",
-		"left" => 78, 
-		"top" => 0, 
-		"width" => 124, 
-		"height" => 271 
+		"left" => 78,
+		"top" => 0,
+		"width" => 124,
+		"height" => 271
 	),
-	
-	array( 
-		"id" =>  "imon", 
-		"href" => "battletrain", 
-		"title" => "לעמן את דמות שלך | Train",
-		"left" => 640, 
-		"top" => 0, 
-		"width" => 103, 
-		"height" => 269 
-	),
-	
-	array( 
-		"id" =>  "back", 
-		"href" => "road2", 
-		"title" => "חזרה לרחוב",
-		"left" => 845, 
-		"top" => 3, 
-		"width" => 96, 
-		"height" => 68 
-	),
+
 );
 
 ?>
