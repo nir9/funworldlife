@@ -11,6 +11,10 @@ class Register extends MY_Controller
 	
 	function index()
 	{
+		if ($this->is_user_connected()) {
+			$this->redirect_to_mainPage();
+		}
+	
 		$data = array();
 		$size = 30;
 		$data["title"] = "Funworldlife - הרשמה";

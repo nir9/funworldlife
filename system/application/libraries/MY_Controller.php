@@ -51,5 +51,15 @@ class MY_Controller extends Controller {
 		$data['message'] = $message;
 		$this->load->view('message_view', $data);
 	}
+	
+	function is_user_connected()
+	{
+		return $this->session->userdata('logged_in');
+	}
+	
+	function redirect_to_mainPage()
+	{
+		redirect("/welcome");
+	}
 }  
 ?>

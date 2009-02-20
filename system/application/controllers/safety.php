@@ -7,7 +7,7 @@ class Safety extends Funworldlife
 	{
 		$data = array();
 		$data["title"] = "Funworldlife - בתיחות באינטרנט";
-		$this->load->view("safety_view", $data);
+		$this->display_view("safety_view", $data);
 	}
 }
 ?>

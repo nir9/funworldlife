@@ -7,7 +7,7 @@ class Mainpage extends Funworldlife
 	{
 		$data = array();
 		$data["title"] = "Funworldlife - הדף הראשי";
-		$this->load->view("mainpage_view", $data);
+		$this->display_view("mainpage_view", $data);
 	}
 }
 ?>

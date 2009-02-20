@@ -5,7 +5,7 @@ class Contactus extends MY_Controller
 	{
 		$data = array();
 		$data["title"] = "Funworldlife - צור קשר";
-		$this->load->view("contactus_view", $data);
+		$this->display_view("contactus_view", $data);
 	}
 }
 

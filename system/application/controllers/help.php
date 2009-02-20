@@ -5,7 +5,7 @@ class Help extends MY_Controller
 	{
 		$data = array();
 		$data["title"] = "Funworldlife - עזרה";
-		$this->load->view("help_view", $data);
+		$this->display_view("help_view", $data);
 	}
 }
 

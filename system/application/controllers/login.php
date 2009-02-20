@@ -12,6 +12,9 @@ class Login extends MY_Controller
 	function index()
 	{
 		$this->referer = $this->input->server('HTTP_REFERER');
+		if ($this->is_user_connected()) {
+			$this->redirect_to_referer();
+		}
 	
 		$data = array();
 		$data["title"] = "Funworldlife - התחברות";
@@ -36,7 +39,11 @@ class Login extends MY_Controller
 		}
 		
 		//$this->_loadProducts($id);	
-		
+		$this->redirect_to_referer();
+	}
+	
+	function redirect_to_referer()
+	{
 		if ($this->referer != "") {
 			redirect($this->referer);
 		}
@@ -48,7 +55,7 @@ class Login extends MY_Controller
 	function logout()
 	{
 		$this->simpleloginsecure->logout();
-		redirect("/welcome");
+		$this->redirect_to_mainPage();
 	}
 	
 	function _error($message)
