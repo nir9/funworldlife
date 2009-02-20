@@ -6,6 +6,7 @@ class Battletunnle extends Funworldlife {
 	{
 		global $map;
 		global $map_file;
+		$this->set_must_be_connected(true);
 		parent::show_map('Funworldlife - בית המלחמות', $map, $map_file);
 	}
 }

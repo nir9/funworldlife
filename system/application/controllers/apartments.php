@@ -5,6 +5,7 @@ class apartments extends Funworldlife {
 	{
 		global $map;
 		global $map_file;
+		$this->set_must_be_connected(true);
 		parent::show_map('Funworldlife - דירות', $map, $map_file);
 	}
 }

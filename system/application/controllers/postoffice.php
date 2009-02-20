@@ -6,6 +6,7 @@ class Postoffice extends Funworldlife {
 	{
 		global $map;
 		global $map_file;
+		$this->set_must_be_connected(true);
 		parent::show_map('Funworldlife - דואר', $map, $map_file);
 	}
 }

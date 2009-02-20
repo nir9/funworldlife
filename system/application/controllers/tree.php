@@ -4,7 +4,8 @@ class TreeComingSoon extends Funworldlife {
 	function index()
 	{
 		global $map;
-		global $map_file;
+		global $map_file;]
+		$this->set_must_be_connected(true);
 		parent::show_map('Funworldlife - טיפוס על העץ', $map, $map_file);
 	}
 }

@@ -1,11 +1,19 @@
 <?php
 
 class Funworldlife extends MY_Controller {
+	var $must_be_connected;
 
 	function Funworldlife()
 	{
 		parent::MY_Controller();	
 		$this->load->helper('url');
+		
+		$this->must_be_connected = false;
+	}
+	
+	function set_must_be_connected($must_be_connected)
+	{
+		$this->must_be_connected = $must_be_connected;
 	}
 	
 	/** Show an image map
@@ -27,6 +35,13 @@ class Funworldlife extends MY_Controller {
 	 */
 	function show_map($title, $map, $map_file)
 	{
+		if ($this->must_be_connected) {
+			if (!$this->is_user_connected()) {
+				redirect('/login/', 'refresh');
+				return;
+			}
+		}
+	
 		$additional_css = array();
 		$additional_body = array();
 		$this->create_additionals($additional_css, $additional_body);
