@@ -26,9 +26,7 @@
 		<input type='reset' value='אפס טופס'>
 		<br>
 		<br>
-		<a style="color: green;"><b>יש לך חשבון?</b></a>
-		<br>
-		<a href="login"><b>התחבר</b></a>
+		<a href="login"><img src="<?php print base_url() ?>images/login_register.png"></a>
 		</fieldset>
 <?php echo form_close(); ?>
 		
