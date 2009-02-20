@@ -49,7 +49,7 @@ class MY_Controller extends Controller {
 		$data = array();
 		$data['title'] = $title;
 		$data['message'] = $message;
-		$this->load->view('message_view', $data);
+		$this->display_view('message_view', $data);
 	}
 	
 	function is_user_connected()
