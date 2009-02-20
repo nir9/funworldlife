@@ -22,22 +22,19 @@ class Cleanstreet extends Funworldlife {
 		// 2. Add money to account
 		// 3. Return to previous page
 
-		$garbageAmount = 
-			$this->CleanstreetLibrary->garbageAmount();
-		// TODO: fixme, doesn't work, value is always 0
-		if (false && $garbageAmount == 0) {
-			echo $this->CleanstreetLibrary->garbageAmount();
+		if ($this->session->userdata('garbage') == 0) {
+			parent::show_message("שגיאה", ".לא נמצא זבל, אנא נסו למצוא ברחובות");
 			return;
+		}
+		else {
+			$this->session->set_userdata('garbage', 0);
 		}
 		
 		$money =
 			$this->config->item("FWL_clean_street_money");
 		parent::add_money($money);
 		
-		$data = array();
-		$data['title'] = 'קיבלת כסף';
-		$data['message'] = 'קיבלת כסף';
-		$this->load->view('message_view', $data);
+		parent::show_message('קיבלת כסף', 'קיבלת כסף');
 	}
 }
 

@@ -8,7 +8,17 @@
 		<div dir='rtl' align="center">
 <?php print $message; ?>
 		<br>
-		<input type="submit" onclick="window.location='<?php print $_SERVER['HTTP_REFERER']; ?>'" value="חזרה לעמוד הקודם -->">
+
+<?php 
+if (isset($_SERVER['HTTP_REFERER'])) {
+	$referer = $_SERVER['HTTP_REFERER'];
+}
+else {
+	$referer = base_url();
+}
+?>
+
+	<input type="submit" onclick="window.location='<?php print $referer; ?>'" value="חזרה לעמוד הקודם -->">
 		</div>
 	</body>
 </html>
