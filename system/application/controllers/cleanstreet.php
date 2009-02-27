@@ -16,7 +16,7 @@ class Cleanstreet extends Funworldlife {
 			$user_id = $this->session->userdata('user_id');
 			$this->load->model('UsersJobs');
 			$this->UsersJobs->set_user_job($user_id, 'CleanStreet');
-			$this->redirect_to_mainPage();
+			$this->redirect_to_main_page();
 		}
 		else {
 			redirect("/pikework");
@@ -55,7 +55,7 @@ $map = array(
 	array( 
 		"id" =>  "yes", 
 		"href" => "cleanstreet/acceptjob/yes", 
-		"title" => "כן אני בתוך שאני רוצה לעבוד בעבודה זו",
+		"title" => "כן אני בטוח שאני רוצה לעבוד בעבודה זו",
 		"left" => 145, 
 		"top" => 295, 
 		"width" => 74, 
