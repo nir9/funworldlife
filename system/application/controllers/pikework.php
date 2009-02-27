@@ -21,41 +21,41 @@ $map = array(
 	array( 
 		"id" =>  "cleanstreet", 
 		"href" => "cleanstreet", 
-		"title" => "ניקוי רחובות( העבודה הכי פשוטה) ",
-		"left" => 139, 
-		"top" => 316, 
-		"width" => 614, 
-		"height" => 252 
+		"title" => "ניקוי רחובות",
+		"left" => 757, 
+		"top" => 396, 
+		"width" => 152, 
+		"height" => 172 
 	),
 	
 	array( 
-		"id" =>  "inbattle" ,
-		"href" => "battle", 
-		"title" => "לחץ כאן כדי להיכנס למלחמה",
-		"left" => 78, 
-		"top" => 0, 
-		"width" => 124, 
-		"height" => 271 
+		"id" =>  "garden" ,
+		"href" => "garden", 
+		"title" => "לשתול גן ירק",
+		"left" => 538, 
+		"top" => 391, 
+		"width" => 168, 
+		"height" => 177 
 	),
 	
 	array( 
-		"id" =>  "imon", 
-		"href" => "battletrain", 
-		"title" => "לעמן את דמות שלך | Train",
-		"left" => 640, 
-		"top" => 0, 
-		"width" => 103, 
-		"height" => 269 
+		"id" =>  "cristal", 
+		"href" => "cristal", 
+		"title" => "לחפש קריסטל",
+		"left" => 336, 
+		"top" => 390, 
+		"width" => 176, 
+		"height" => 178 
 	),
 	
 	array( 
 		"id" =>  "back", 
-		"href" => "road2", 
+		"href" => "road5", 
 		"title" => "חזרה לרחוב",
-		"left" => 845, 
-		"top" => 3, 
-		"width" => 96, 
-		"height" => 68 
+		"left" => 0, 
+		"top" => 476, 
+		"width" => 115, 
+		"height" => 92 
 	),
 );
 
