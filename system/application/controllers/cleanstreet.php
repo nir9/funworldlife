@@ -55,21 +55,31 @@ $map = array(
 	array( 
 		"id" =>  "yes", 
 		"href" => "cleanstreet/acceptjob/yes", 
-		"title" => "ניקוי רחובות( העבודה הכי פשוטה) ",
-		"left" => 139, 
-		"top" => 316, 
-		"width" => 614, 
-		"height" => 252
+		"title" => "כן אני בתוך שאני רוצה לעבוד בעבודה זו",
+		"left" => 145, 
+		"top" => 295, 
+		"width" => 74, 
+		"height" => 58
 	),
 	
 	array( 
 		"id" =>  "no" ,
 		"href" => "cleanstreet/acceptjob/no", 
-		"title" => "לחץ כאן כדי להיכנס למלחמה",
-		"left" => 78,
+		"title" => "לא אני לא רוצה לעבוד בעבודה זו",
+		"left" => 599,
+		"top" => 262,
+		"width" => 70,
+		"height" => 69
+	),
+	
+		array( 
+		"id" =>  "back" ,
+		"href" => "PikeWork", 
+		"title" => "חזרה",
+		"left" => 0,
 		"top" => 0,
-		"width" => 124,
-		"height" => 271
+		"width" => 111,
+		"height" => 90
 	),
 
 );
