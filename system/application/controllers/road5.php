@@ -22,7 +22,7 @@ $map = array(
 	array( 
 		"id" =>  "PikeWork", 
 		"href" => "PikeWork", 
-		"title" => "בית בחירת עבודות | The Place Theat You Pike Your Self A Work",
+		"title" => "בית בחירת עבודות ",
 		"left" => 209, 
 		"top" => 59, 
 		"width" => 533, 
@@ -32,7 +32,7 @@ $map = array(
 	array( 
 		"id" =>  "Buyhouse", 
 		"href" => "Buyhouse", 
-		"title" => "לחץ כאן כדי לקנות בית | Click Here To Buy An House",
+		"title" => "לחץ כאן כדי לקנות בית",
 		"left" => 754, 
 		"top" => 474,
 		"width" => 182, 
@@ -63,7 +63,7 @@ $map = array(
 	array( 
 		"id" =>  "Buyhouse2", 
 		"href" => "Buyhouse", 
-		"title" => "לחץ כאן כדי לקנות בית | Click Here To Buy An House",
+		"title" => "לחץ כאן כדי לקנות בית",
 		"left" => 11, 
 		"top" => 471,
 		"width" => 182, 
