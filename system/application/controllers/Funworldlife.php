@@ -32,8 +32,10 @@ class Funworldlife extends MY_Controller {
 		  * top -
 		  * width -
 		  * height
+		  
+		@param map_name is an optional name.
 	 */
-	function show_map($title, $map, $map_file)
+	function show_map($title, $map, $map_file, $map_name="")
 	{
 		if ($this->must_be_connected) {
 			if (!$this->is_user_connected()) {
@@ -42,6 +44,7 @@ class Funworldlife extends MY_Controller {
 			}
 		}
 	
+		$this->map_name = $map_name;
 		$additional_css = array();
 		$additional_body = array();
 		$this->create_additionals($additional_css, $additional_body);
@@ -68,6 +71,12 @@ class Funworldlife extends MY_Controller {
 	}
 	
 	function create_additionals(&$additional_css, &$additional_body)
+	{
+		$this->create_additionals_for_job($additional_css, $additional_body);
+		$this->create_additionals_for_houses($additional_css, $additional_body);
+	}
+	
+	function create_additionals_for_job(&$additional_css, &$additional_body)
 	{
 		if ( $this->get_job_name() == "CleanStreet" )
 		{
@@ -101,7 +110,50 @@ background: url('$base_url" . "images/garbage.png');
 "<a id='Garbage1' href='javascript:void(0)' onclick='jQuery.get(\"$site_url/cleanstreet/collect\", function(data){window.location.reload();})' title='Collect Gargbage | לאסוף זבל'></a>";
 */
 		}
+	}
+	
+	function create_additionals_for_houses(&$additional_css, &$additional_body)
+	{
+		return;
 		
+		$this->load->model('Houses');
+		$houses = $this->Houses->get_houses_for_street($this->map_name);
+		if ($houses == NULL) {
+			return;
+		}
+		
+		$base_url = base_url();
+		$site_url = site_url();
+		foreach ($houses as $house) {
+			$owner_id = $house["owner_id"];
+			$left = $house["left"];
+			$top = $house["top"];
+			
+			if ($owner == -1) {
+				// TODO: put sign
+			}
+			else {
+				//TODO: put house
+			}
+		}
+		exit();
+		return;
+		
+		$left = $houses[0]["left"];
+		$top = $houses[0]["top"];
+		
+		$additional_css[] = 
+"#House {
+float: left;
+position: absolute;
+margin-left:  $left" . "px;
+margin-top: $top" . "px;
+width: 186px;
+height: 284px;
+background: url('$base_url" . "images/house_template.png');
+}";
+			$additional_body[] = 
+			"<a id='House' href='' title='Collect Gargbage | לאסוף זבל'></a>";
 	}
 }
 
