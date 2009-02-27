@@ -22,7 +22,6 @@ foreach ($map as $piece)
 	print "margin-top: " . $piece["top"] . "px;\n";
 	print "width: " . $piece["width"] . "px;\n";
 	print "height: " . $piece["height"] . "px;\n";
-	print "border: 1px dotted white;\n";
 	print "}\n\n";
 }
 print "-->\n";
