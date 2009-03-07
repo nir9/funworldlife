@@ -71,6 +71,22 @@ class Funworldlife extends MY_Controller {
 		$this->UsersInfo->change_money($user_id, $new_money);
 	}
 	
+	function take_money($money, $user_id=-1)
+	{
+		if ($user_id == -1) {
+			$user_id = $this->session->userdata('user_id');
+		}
+		$this->load->model('UsersInfo');
+		$current_money = $this->UsersInfo->get_money($user_id);
+		if ($current_money < $money) {
+			return false;
+		}
+		
+		$new_money = $current_money - $money;
+		$this->UsersInfo->change_money($user_id, $new_money);
+		return true;
+	}
+	
 	function create_additionals(&$additional_css, &$additional_body)
 	{
 		$this->create_additionals_for_job($additional_css, $additional_body);
@@ -134,7 +150,7 @@ class Funworldlife extends MY_Controller {
 				);
 				$additional_body[] = create_additional_body(
 					$css_id, 
-					"buyhouse/$house_id", 
+					"buyhouse/buy/$house_id", 
 					"קנה את הבית"					
 				);
 			}
