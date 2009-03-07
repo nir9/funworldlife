@@ -28,26 +28,6 @@ $map = array(
 	),
 	
 	array( 
-		"id" =>  "buyhouse", 
-		"href" => "buyhouse", 
-		"title" => "Click Her To Bulid A House | לחץ כאן כדי לבנות בית",
-		"left" => 418, 
-		"top" => 461, 
-		"width" => 183, 
-		"height" => 107 
-	),
-	
-	array( 
-		"id" =>  "buyhouse2", 
-		"href" => "buyhouse", 
-		"title" => "Click Her To Bulid A House | לחץ כאן כדי לבנות בית",
-		"left" => 227, 
-		"top" => 461, 
-		"width" => 183, 
-		"height" => 107 
-	),
-	
-	array( 
 		"id" =>  "apartments", 
 		"href" => "apartments", 
 		"title" => "דירות | apartments",

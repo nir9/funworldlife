@@ -7,6 +7,7 @@ class Funworldlife extends MY_Controller {
 	{
 		parent::MY_Controller();	
 		$this->load->helper('url');
+		$this->load->helper('fwl_map_helper');
 		
 		$this->must_be_connected = false;
 	}
@@ -87,25 +88,21 @@ class Funworldlife extends MY_Controller {
 			if ($result != 1) {
 				return;
 			}
-			//$this->CleanstreetLibrary->addGarbage();
 			$this->global_data["garbage"] = 1;
 			$this->session->set_userdata('garbage', 1);
 			
-			$base_url = base_url();
-			$site_url = site_url();
-			
-			$additional_css[] = 
-"#Garbage1 {
-float: left;
-position: absolute;
-margin-left: 790px;
-margin-top: 20px;
-width: 40px;
-height: 40px;
-background: url('$base_url" . "images/garbage.png');
-}";
-			$additional_body[] = 
-			"<a id='Garbage1' href='$site_url/cleanstreet/collect' title='Collect Gargbage | לאסוף זבל'></a>";
+			$additional_css[] = create_additional_css(
+				"Garbage1",
+				790, 20,
+				40, 40,
+				base_url() . "images/garbage.png"
+			);
+
+			$additional_body[] = create_additional_body(
+				"Garbage1", 
+				site_url() . "/cleanstreet/collect", 
+				'Collect Gargbage | לאסוף זבל'					
+			);
 /* Trying ajax:
 "<a id='Garbage1' href='javascript:void(0)' onclick='jQuery.get(\"$site_url/cleanstreet/collect\", function(data){window.location.reload();})' title='Collect Gargbage | לאסוף זבל'></a>";
 */
@@ -114,46 +111,37 @@ background: url('$base_url" . "images/garbage.png');
 	
 	function create_additionals_for_houses(&$additional_css, &$additional_body)
 	{
-		return;
-		
 		$this->load->model('Houses');
 		$houses = $this->Houses->get_houses_for_street($this->map_name);
 		if ($houses == NULL) {
 			return;
 		}
 		
-		$base_url = base_url();
-		$site_url = site_url();
 		foreach ($houses as $house) {
+			$house_id = $house["house_id"];
 			$owner_id = $house["owner_id"];
-			$left = $house["left"];
-			$top = $house["top"];
 			
-			if ($owner == -1) {
-				// TODO: put sign
+			$css_id = "house_$house_id";
+			$width = $this->config->item("FWL_house_image_width");
+			$height = $this->config->item("FWL_house_image_height");
+			
+			if ($owner_id == -1) {
+				$additional_css[] = create_additional_css(
+					$css_id,
+					$house["left"], $house["top"],
+					$width, $height,
+					base_url() . "images/house_buy_sign.png"
+				);
+				$additional_body[] = create_additional_body(
+					$css_id, 
+					"buyhouse/$house_id", 
+					"קנה את הבית"					
+				);
 			}
 			else {
 				//TODO: put house
 			}
 		}
-		exit();
-		return;
-		
-		$left = $houses[0]["left"];
-		$top = $houses[0]["top"];
-		
-		$additional_css[] = 
-"#House {
-float: left;
-position: absolute;
-margin-left:  $left" . "px;
-margin-top: $top" . "px;
-width: 186px;
-height: 284px;
-background: url('$base_url" . "images/house_template.png');
-}";
-			$additional_body[] = 
-			"<a id='House' href='' title='Collect Gargbage | לאסוף זבל'></a>";
 	}
 }
 

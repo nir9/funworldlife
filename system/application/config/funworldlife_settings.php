@@ -7,4 +7,7 @@
 	
 	$config["FWL_clean_street_chance"] = 5;
 	$config["FWL_clean_street_money"] = 3;
+	
+	$config["FWL_house_image_width"] = 186;
+	$config["FWL_house_image_height"] = 284;
 ?>
