@@ -32,37 +32,55 @@ class Buyhouse extends Funworldlife
 	
 		$color = $this->input->post('color');
 		$house_id = $this->input->post('house_id');
-
-		/*
-		$price_for_dunam = $this->config->item("FWL_price_for_dunam");
-		$house_price = $price_for_dunam * (float)$house_size;
-		$owner_id = $this->session->userdata('userid');
 		
-		$this->load->model('UsersInfo', '', TRUE);
-		
-		$money = $this->UsersInfo->get_money($owner_id);
-		if ($money < $house_price) {
-			return $this->_error("אין מספיק כסף! צריך לפחות $house_price");
+		$price_color_regular =
+			$this->config->item("FWL_house_price_color_regular");
+		$price_color_gold =
+			$this->config->item("FWL_house_price_color_gold");
+			
+		$price = -1;
+		if ($color == "gold") {
+			$price = $price_color_gold;
+		}
+		else {
+			$price = $price_color_regular;
 		}
 		
-		$this->UsersInfo->change_money($owner_id, $money - $house_price);
+		$has_enough_money = parent::take_money($price);
+		if (!$has_enough_money) {
+			parent::show_message(
+				"אין מספיק כסף",
+				"אין לך מספיק כסף כדי לקנות את הבית"
+			);
+			return;
+		}
 		
-		$this->load->model('House', '', TRUE);
-		$id = $this->House->add_house($owner_id, $id, $house_size, $color, $city_id);
-		*/
+		$user_id = $this->session->userdata('user_id');
+		$this->load->model('Houses');
+		$this->Houses->buy_house($user_id, $house_id, $color);
 		
 		redirect("/welcome");
 	}
 	
 	function _colorsArray($name)
 	{
+		$price_color_regular =
+			$this->config->item("FWL_house_price_color_regular");
+		$price_color_gold =
+			$this->config->item("FWL_house_price_color_gold");
+			
 		$colors = array(
-			'brown' => 'חום',
-			'red' => 'אדום',
-			'olive_green' => 'ירוק זית',
-			'gold' => 'זהב',
+			'brown' => $this->_color_price_string("חום", $price_color_regular),
+			'red' => $this->_color_price_string("אדום", $price_color_regular),
+			'olive_green' => $this->_color_price_string("ירוק זית", $price_color_regular),
+			'gold' => $this->_color_price_string("זהב", $price_color_gold),
 		);
 		return array('name' => $name, 'options' => $colors);
+	}
+	
+	function _color_price_string($color_name, $price)
+	{
+		return "$color_name - מחיר $price Fun-Coins";
 	}
 }
 

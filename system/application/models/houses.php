@@ -21,4 +21,15 @@ class Houses extends Model
 			return $query->result_array();
 		}
 	}
+	
+	function buy_house($user_id, $house_id, $color)
+	{
+		$data = array(
+			'owner_id' => $user_id,
+			'color' => $color,
+		);
+
+		$this->db->where('house_id', $house_id);
+		$this->db->update($this->locations_table_name, $data); 
+	}
 }

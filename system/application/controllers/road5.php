@@ -6,7 +6,7 @@ class Road5 extends Funworldlife {
 	{
 		global $map;
 		global $map_file;
-		parent::show_map('Funworldlife - רחוב חמישי', $map, $map_file);
+		parent::show_map('Funworldlife - רחוב חמישי', $map, $map_file, "road5");
 	}
 }
 
@@ -28,17 +28,6 @@ $map = array(
 		"width" => 533, 
 		"height" => 514 
 	),
-	
-	array( 
-		"id" =>  "Buyhouse", 
-		"href" => "Buyhouse", 
-		"title" => "לחץ כאן כדי לקנות בית",
-		"left" => 754, 
-		"top" => 474,
-		"width" => 182, 
-		"height" => 94 
-	),
-	
 		
 	array( 
 		"id" =>  "arrow_left", 
@@ -59,16 +48,7 @@ $map = array(
 		"width" => 79, 
 		"height" => 51
 	),	
-	
-	array( 
-		"id" =>  "Buyhouse2", 
-		"href" => "Buyhouse", 
-		"title" => "לחץ כאן כדי לקנות בית",
-		"left" => 11, 
-		"top" => 471,
-		"width" => 182, 
-		"height" => 97 
-	),
+
 );
 
 ?>

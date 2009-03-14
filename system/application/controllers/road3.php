@@ -6,7 +6,7 @@ class Road3 extends Funworldlife {
 	{
 		global $map;
 		global $map_file;
-		parent::show_map('Funworldlife - רחוב שלישי', $map, $map_file);
+		parent::show_map('Funworldlife - רחוב שלישי', $map, $map_file, "road3");
 	}
 }
 
@@ -17,15 +17,6 @@ $map_file = array (
 );
 
 $map = array(
-	array( 
-		"id" =>  "Buyhouse3", 
-		"href" => "Buyhouse", 
-		"title" => "לחץ כאן כדי לקנות בית | Click Here To Buy An House",
-		"left" => 36, 
-		"top" => 467,
-		"width" => 180, 
-		"height" => 101 
-	),
 	
 	array( 
 		"id" =>  "Museum", 
