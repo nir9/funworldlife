@@ -143,8 +143,7 @@ class Funworldlife extends MY_Controller {
 			
 			if ($owner_id == -1) {
 				$additional_css[] = create_additional_css(
-					$css_id,
-					$house["left"], $house["top"],
+					$css_id, $house["left"], $house["top"],
 					$width, $height,
 					base_url() . "images/house_buy_sign.png"
 				);
@@ -155,7 +154,17 @@ class Funworldlife extends MY_Controller {
 				);
 			}
 			else {
-				//TODO: put house
+				$color = $house["color"];
+				$additional_css[] = create_additional_css(
+					$css_id, $house["left"], $house["top"],
+					$width, $height,
+					base_url() . "images/house_$color.png"
+				);
+				$additional_body[] = create_additional_body(
+					$css_id, 
+					"we_need_something_here/$house_id", 
+					"להיכנס לבית"
+				);
 			}
 		}
 	}
