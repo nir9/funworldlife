@@ -10,7 +10,6 @@ include("head_code.php")
 	</style>
 		
 	</head>
-
 <body>
 <?php
 	include("header_minimal.php");
