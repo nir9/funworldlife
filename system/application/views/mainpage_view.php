@@ -5,11 +5,26 @@
 ?>
 
 		<div dir='rtl' align="center">
-		<div style="background: blue; width: 250; font-family: Arial;">
-		<font color="White"><b>דברים קטנים נוספים</b></font></div>
-		<a href="images"><img src="<?php echo base_url(); ?>images/images.png"></a>
+		<br>
+		<div style="background: cyan; width: 900; font-family: Arial;">
+		<b>חדשות האתר</b>
+		<br>
+		<br>
+		חדש האתר החדש יצא!!!!! מזל טוב לאתר
+		<br>
+		<br>
+		האתר הזה הוא אתר חדש לכן עם אתם מוצאים באגים אז תודיעו לנו שלחו לאימייל: bugsreport@funworldlife.com
+		ואנחנו נתקן אותם וגם מי שישלך לי באג וזה זה יהיה באג רציני אז הוא יקבל 100 Fun-Coins :)
+		<br>
+		<br>
+		תודה רבה רבה לכל מי שהודיע לי שיש באג
+		<br>
+		<br>
+		
 		</div>
-		<br><hr>
+		
+		</div>
+		<br>
 		<?php $this->load->view("footer.php", $title) ?>
 	</body>
 </html>
