@@ -1,4 +1,4 @@
-
+﻿
 <?php 
 	$data["title"] = $title;
 	$this->load->view("header.php", $data) 
@@ -6,7 +6,10 @@
 
 	<div dir='rtl' align='center'>
 
+
 		<?php 
+		print "<h1>ברוכים הבאים ל$title</h1>";
+		print "	<img src='$images_path/$shopkeeper_image'>";
 		
 		foreach ($products as $product)
 		{	
@@ -14,13 +17,17 @@
 			$price = $product['price'];
 			$product_id = $product['product_id'];
 			$image = $product['image'];
+			$description = $product['description'];
+			
+			$product_description = str_replace(
+			"'", "", "$name: $description");
 			
 			print "<table><tr>";
 			print "<td>מוצר: $name<br>\n";
 			print "	מחיר: $price <br>\n";
 			print "</td>";
 			print "<td>";
-			print "	<img src='$images_path/$image' alt='$name'>";
+			print "	<img src='$products_images_path/$image' alt='$product_description'>";
 			print "</td>";
 			print "<td>";
 			print form_open($buyproduct_page);

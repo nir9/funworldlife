@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require "Funworldlife.php";
 
 class Shops extends Funworldlife 
@@ -11,7 +11,8 @@ class Shops extends Funworldlife
 		//header("Cache-Control: no-cache, must-revalidate"); 
 		
 		$this->categories = array(
-			'food' => 'חנות אוכל', 
+			'food' => array('מזונה - חנות מזון', 'shopkeeperfood.png'),
+/*
 			'pet' => 'חנות חיות',
 			'telepone' => 'חנות טלפון', 
 			'car' => 'חנות מכוניות', 
@@ -35,6 +36,8 @@ class Shops extends Funworldlife
 			'mav' => 'חנות כלי עבודה',
 			'mas' => 'חנות מזקרות',
 			'sport' => 'חנות ספורט',
+
+*/
 		);		
 
 	}
@@ -55,10 +58,12 @@ class Shops extends Funworldlife
 			print "ERROR";
 			return;
 		}
-		$category_title = $this->categories[$category];
+		$category_title = $this->categories[$category][0];
+		$shopkeeper_image = $this->categories[$category][1];
 	
 		$data = array();
 		$data["title"] = $category_title;
+		$data["shopkeeper_image"] = $shopkeeper_image;
 		
 		$this->load->model('ProductsModel', '', TRUE);
 		$categories = array($category);
@@ -70,7 +75,8 @@ class Shops extends Funworldlife
 		}
 		$data["products"] = $products;
 		
-		$data["images_path"] = base_url() . "images/products";
+		$data["images_path"] = base_url() . "images" ;
+		$data["products_images_path"] = base_url() . "images/products";
 		$data["buyproduct_page"] = "buyproduct/submit";
 		$data["owner_data"] = NULL;
 		

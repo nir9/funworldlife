@@ -12,5 +12,6 @@ NAME="צורקשר" BORDER="0">
 </A></div>
 <div align="center" dir="ltr" class="footer" style="background: yellow; width: 970;">2006 - 2009</div>
 <div align="center" dir="rtl" class="footer" style="background: yellow; width: 970;"> Funworldlife ©
-<br><a href="Ver">Version: 3.01 BETA</a></div>
+<br>
+Evaluation Copy <a href="Ver">Version: 3.01 BETA</a></div>
 

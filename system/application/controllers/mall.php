@@ -40,7 +40,7 @@ $map = array(
 	
 	array( 
 		"id" =>  "shop_food", 
-		"href" => "shop_food", 
+		"href" => "shops/shop/food", 
 		"title" => "מזונה - חנות מזון",
 		"left" => 5, 
 		"top" => 42, 
