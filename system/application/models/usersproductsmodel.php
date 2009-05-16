@@ -25,8 +25,8 @@ class UsersProductsModel extends Model
 	
 	function set_products($user_id, $products, $my_shop = "")
 	{
-		$this->db->delete($this->table_name, array('user_id' => $id)); 
+		$this->db->delete($this->table_name, array('user_id' => $user_id)); 
 		$this->db->insert($this->table_name, 
-			array('user_id' => $id, 'products' => $products, 'my_shop' => $my_shop));
+			array('user_id' => $user_id, 'products' => $products, 'my_shop' => $my_shop));
 	}
 }

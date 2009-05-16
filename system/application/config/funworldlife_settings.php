@@ -12,4 +12,6 @@
 	$config["FWL_house_image_height"] = 284;
 	$config["FWL_house_price_color_regular"] = 47;
 	$config["FWL_house_price_color_gold"] = 117;
+	
+	$config["FWL_products_field_limit"] = 1000;
 ?>

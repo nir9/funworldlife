@@ -136,8 +136,15 @@ class Products {
 		$CI =& get_instance();
 		$CI->load->model('UsersProductsModel', '', TRUE);
 		$row = $CI->UsersProductsModel->get_products($this->_userId);
-		$products = $row->products;
-		$my_shop = $row->my_shop;
+		
+		if ($row != NULL) {
+			$products = $row->products;
+			$my_shop = $row->my_shop;
+		}
+		else {
+			$products = NULL;
+			$my_shop = NULL;
+		}
 		
 		if ($products != NULL) {
 			$this->_products = unserialize($products);
