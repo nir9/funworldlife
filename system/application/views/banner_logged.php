@@ -29,4 +29,16 @@ onmouseout="roll_over('דף הראשי', '<?php print base_url(); ?>images/Main_
 <IMG SRC="<?php print base_url(); ?>images/Main_Page1.png" width="100" HEIGHT="50"
 NAME="דף הראשי" BORDER="0">
 </a>
+
+<a href="<?php echo site_url(); ?>/english" onmouseover="roll_over('English', '<?php print base_url(); ?>images/english2.png')"
+onmouseout="roll_over('English', '<?php print base_url(); ?>images/english1.png')">
+<IMG SRC="<?php print base_url(); ?>images/english1.png" width="100" HEIGHT="50"
+NAME="English" BORDER="0">
+</a>
+
+<a href="<?php echo site_url(); ?>/skarim" onmouseover="roll_over('Questions', '<?php print base_url(); ?>images/qandaskarim2.png')"
+onmouseout="roll_over('Questions', '<?php print base_url(); ?>images/qandaskarim1.png')">
+<IMG SRC="<?php print base_url(); ?>images/qandaskarim1.png" width="100" HEIGHT="50"
+NAME="Questions" BORDER="0">
+</a>
 </div>
