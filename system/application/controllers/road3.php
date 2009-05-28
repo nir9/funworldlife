@@ -17,7 +17,7 @@ $map_file = array (
 );
 
 $map = array(
-	
+	/*
 	array( 
 		"id" =>  "Museum", 
 		"href" => "Museum", 
@@ -38,7 +38,7 @@ $map = array(
 		"height" => 412 
 	),
 	
-		
+		*/
 	array( 
 		"id" =>  "arrow_left", 
 		"href" => "road2", 

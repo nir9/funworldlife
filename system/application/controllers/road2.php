@@ -17,7 +17,7 @@ $map_file = array (
 );
 
 $map = array(
-	array( 
+	/*array( 
 		"id" =>  "Buttletunnle", 
 		"href" => "battletunnle", 
 		"title" => "בית המלחמות | Battletunnle",
@@ -36,7 +36,7 @@ $map = array(
 		"width" => 106, 
 		"height" => 317 
 	),
-	
+	*/
 		
 	array( 
 		"id" =>  "arrow_left", 

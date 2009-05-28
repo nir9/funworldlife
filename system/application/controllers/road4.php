@@ -19,16 +19,6 @@ $map_file = array (
 $map = array(
 
 	
-	array( 
-		"id" =>  "DigHere", 
-		"href" => "DigHere1", 
-		"title" => "חפר כאן | Dig Here",
-		"left" => 624, 
-		"top" => 482,
-		"width" => 86, 
-		"height" => 71 
-	),
-	
 		
 	array( 
 		"id" =>  "arrow_left", 
@@ -40,16 +30,7 @@ $map = array(
 		"height" => 63
 	),	
 	
-		array( 
-		"id" =>  "ClickFun-Desert", 
-		"href" => "Desert", 
-		"title" => "לחץ כאן כדי ללחת למדבר | Click Here To Go In The Fun-Desert",
-		"left" => 336, 
-		"top" => 351,
-		"width" => 189,
-		"height" => 169 
-	),
-	
+		
 
 	array( 
 		"id" =>  "arrow_right", 

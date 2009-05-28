@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require "Funworldlife.php";
 
 class Buyhouse extends Funworldlife
@@ -74,6 +74,10 @@ class Buyhouse extends Funworldlife
 			'red' => $this->_color_price_string("אדום", $price_color_regular),
 			'olive_green' => $this->_color_price_string("ירוק זית", $price_color_regular),
 			'gold' => $this->_color_price_string("זהב", $price_color_gold),
+			'green' => $this->_color_price_string("ירוק", $price_color_regular),
+			'grey' => $this->_color_price_string("אפור", $price_color_regular),
+			'pink' => $this->_color_price_string("וורוד", $price_color_regular),
+			'purple' => $this->_color_price_string("סגול", $price_color_regular),
 		);
 		return array('name' => $name, 'options' => $colors);
 	}

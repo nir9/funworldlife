@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 require "Funworldlife.php";
 
 class Mall extends Funworldlife {
@@ -18,25 +18,6 @@ $map_file = array (
 );
 
 $map = array(
-	array( 
-		"id" =>  "guard", 
-		"href" => "guard", 
-		"title" => "שומר",
-		"left" => 740, 
-		"top" => 344, 
-		"width" => 200, 
-		"height" => 224 
-	),
-	
-	array( 
-		"id" =>  "bank", 
-		"href" => "bank", 
-		"title" => "בנק",
-		"left" => 339, 
-		"top" => 386, 
-		"width" => 162, 
-		"height" => 182 
-	),
 	
 	array( 
 		"id" =>  "shop_food", 
@@ -49,26 +30,16 @@ $map = array(
 	),
 	
 	array( 
-		"id" =>  "shop_electric", 
-		"href" => "shop_electric", 
-		"title" => "אלקטריק - חנות אלקטרוניקה",
-		"left" => 332, 
-		"top" => 42, 
-		"width" => 205, 
-		"height" => 219 
+		"id" =>  "shop_fre", 
+		"href" => "shops/shop/fre", 
+		"title" => "פאן רהיטים - חנות רהיטים",
+		"left" => 358, 
+		"top" => 33, 
+		"width" => 207,
+		"height" => 228 
 	),
 	
 	array( 
-		"id" =>  "shop_pets", 
-		"href" => "shop_pets", 
-		"title" => "חיות - חנות חיות",
-		"left" => 671, 
-		"top" => 61, 
-		"width" => 153, 
-		"height" => 200 
-	),	
-	
-		array( 
 		"id" =>  "back", 
 		"href" => "welcome", 
 		"title" => "חזרה לרחוב",

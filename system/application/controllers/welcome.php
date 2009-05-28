@@ -17,7 +17,7 @@ $map_file = array (
 );
 
 $map = array(
-	array( 
+	/*array( 
 		"id" =>  "tree", 
 		"href" => "tree", 
 		"title" => "טיפוס על עץ",
@@ -34,7 +34,7 @@ $map = array(
 		"top" => 404, 
 		"width" => 191, 
 		"height" => 164 
-	),	
+	),	*/
 	array( 
 		"id" =>  "arrow_right", 
 		"href" => "road2", 
@@ -53,7 +53,7 @@ $map = array(
 		"width" => 258, 
 		"height" => 495
 	),	
-	array( 
+	/*array( 
 		"id" =>  "tree2", 
 		"href" => "tree", 
 		"title" => "טיפוס על העץ",
@@ -79,7 +79,7 @@ $map = array(
 		"top" => 400, 
 		"width" => 104, 
 		"height" => 168
-	),
+	),*/
 	
 );
 
