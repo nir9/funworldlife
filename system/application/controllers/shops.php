@@ -12,6 +12,7 @@ class Shops extends Funworldlife
 		
 		$this->categories = array(
 			'food' => array('מזונה - חנות מזון', 'shopkeeperfood.png'),
+			'fre' => array('פאן רהיטים - חנות רהיטים', ''),
 /*
 			'pet' => 'חנות חיות',
 			'telepone' => 'חנות טלפון', 

@@ -154,6 +154,8 @@ class Funworldlife extends MY_Controller {
 				);
 			}
 			else {
+				// TODO: put the user name in the ALT of the image
+				// we can get it from UsersInfo model with owner_id
 				$color = $house["color"];
 				$additional_css[] = create_additional_css(
 					$css_id, $house["left"], $house["top"],
@@ -162,7 +164,7 @@ class Funworldlife extends MY_Controller {
 				);
 				$additional_body[] = create_additional_body(
 					$css_id, 
-					"we_need_something_here/$house_id", 
+					"showhouse/show/$owner_id", 
 					"להיכנס לבית"
 				);
 			}

@@ -48,7 +48,7 @@ class Buyproduct extends Funworldlife
 			return;
 		}
 		
-		redirect("/shops");
+		redirect("/welcome");
 	}
 	
 }

@@ -50,7 +50,7 @@ class ProductsModel extends Model
 	{
 		$this->db->select("*");
 		$this->db->from($this->table_name);
-		$where = "0=1";
+		$where = "product_id = '-1'";
 		foreach ($product_ids as $product_id => $amount) {
 			$where = "$where OR product_id='$product_id'";
 		}
