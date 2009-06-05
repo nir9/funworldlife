@@ -20,8 +20,8 @@ $map = array(
 	
 	
 	array( 
-		"id" =>  "PikeWork", 
-		"href" => "PikeWork", 
+		"id" =>  "Pikework", 
+		"href" => "pikework", 
 		"title" => "בית בחירת עבודות ",
 		"left" => 209, 
 		"top" => 59, 

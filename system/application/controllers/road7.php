@@ -11,7 +11,7 @@ class Road7 extends Funworldlife {
 }
 
 $map_file = array (
-	"file" => "Road_7.png",
+	"file" => "Road_7_.png",
 	"width" => 945,
 	"height" => 568
 );
