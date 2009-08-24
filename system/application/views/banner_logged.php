@@ -37,7 +37,7 @@ NAME="English" BORDER="0">
 </a>
 
 
-<a href="http://localhost/funworldlifecom/index.php/welcome" border="0" alt="עמוד ראשי">
-<img src="http://localhost/funworldlifecom/images/Mini_Logo.png">
+<a href="<?php echo site_url(); ?>/welcome" border="0" alt="עמוד ראשי">
+<img src="<?php print base_url(); ?>images/Mini_Logo.png">
 </a>
 </div>
