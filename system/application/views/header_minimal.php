@@ -1,6 +1,6 @@
 <div align="center">
 	<a href="<?php print site_url(); ?>/welcome">
-		<img src="<?php echo base_url(); ?>images/logo.png">
+		
 	</a>
 </div>	
 

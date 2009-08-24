@@ -1,5 +1,5 @@
-﻿<div align="center" style="background: yellow; width: 970;" dir="rtl">
-
+﻿<div align="center" style="background: yellow; width: 970;" dir="rtl"><a style="font-family: Arial">
+ברוך הבא אורח, <a href="http://localhost/funworldlifecom/index.php/register"> לחץ כאן כדי להירשם לאתר </a>
 	<script>
 	function roll_over(img_name, img_src)
    {
@@ -40,9 +40,7 @@ onmouseout="roll_over('English', '<?php print base_url(); ?>images/english1.png'
 NAME="English" BORDER="0">
 </a>
 
-<a href="<?php echo site_url(); ?>/skarim" onmouseover="roll_over('Questions', '<?php print base_url(); ?>images/qandaskarim2.png')"
-onmouseout="roll_over('Questions', '<?php print base_url(); ?>images/qandaskarim1.png')">
-<IMG SRC="<?php print base_url(); ?>images/qandaskarim1.png" width="100" HEIGHT="50"
-NAME="Questions" BORDER="0">
+<a href="http://localhost/funworldlifecom/index.php/welcome" border="0" alt="עמוד ראשי">
+<img src="http://localhost/funworldlifecom/images/Mini_Logo.png">
 </a>
 </div>

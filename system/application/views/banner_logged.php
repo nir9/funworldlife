@@ -5,11 +5,11 @@ function roll_over(img_name, img_src)
    }
 </script>
 
-<div align="center" style="background: yellow; width: 970;" dir="rtl">
-	
+<div align="left" style="background: yellow; width: 970;" dir="rtl">
+
 	ברוך הבא <?php print $user_name; ?>&nbsp;|&nbsp;
-	כסף:<?php print $user_info->money; ?>&nbsp;|&nbsp;
-	בריאות:<?php print $user_info->health; ?>
+	כסף:<?php print $user_info->money; ?>
+	<!--בריאות:<?php print $user_info->health; ?>--->
 		
 <a href="<?php echo site_url(); ?>/login/logout" onmouseover="roll_over('התנתקות', '<?php print base_url(); ?>images/logout2.png')"
 onmouseout="roll_over('התנתקות', '<?php print base_url(); ?>images/logout1.png')">
@@ -36,9 +36,8 @@ onmouseout="roll_over('English', '<?php print base_url(); ?>images/english1.png'
 NAME="English" BORDER="0">
 </a>
 
-<a href="<?php echo site_url(); ?>/skarim" onmouseover="roll_over('Questions', '<?php print base_url(); ?>images/qandaskarim2.png')"
-onmouseout="roll_over('Questions', '<?php print base_url(); ?>images/qandaskarim1.png')">
-<IMG SRC="<?php print base_url(); ?>images/qandaskarim1.png" width="100" HEIGHT="50"
-NAME="Questions" BORDER="0">
+
+<a href="http://localhost/funworldlifecom/index.php/welcome" border="0" alt="עמוד ראשי">
+<img src="http://localhost/funworldlifecom/images/Mini_Logo.png">
 </a>
 </div>
