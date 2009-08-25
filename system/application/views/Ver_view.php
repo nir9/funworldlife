@@ -8,6 +8,17 @@
 	<br>
 	<br>
 	<div align="center" dir="ltr" class="footer" style="background: cyan; width: 970;">
+	V3.23 BETA 25/8/09
+	</div>
+	<br>
+	שיפור גרפיקת רחובות
+	<br>
+	לוגו פאן וורלד ליף שונה
+	<br>
+    תיקון באג - בבתים לא היה אפשר לראות מוצרים.
+	<br>
+	<br>
+	<div align="center" dir="ltr" class="footer" style="background: cyan; width: 970;">
 	V3.01 BETA 9/6/09
 	</div>
 	<br>

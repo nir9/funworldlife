@@ -1,5 +1,5 @@
 ﻿<div align="center" style="background: yellow; width: 970;" dir="rtl"><a style="font-family: Arial">
-ברוך הבא אורח, <a href="http://localhost/funworldlifecom/index.php/register"> לחץ כאן כדי להירשם לאתר </a>
+ברוך הבא אורח, <a href="<?php echo site_url(); ?>/register"> לחץ כאן כדי להירשם לאתר </a>
 	<script>
 	function roll_over(img_name, img_src)
    {

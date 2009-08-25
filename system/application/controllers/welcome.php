@@ -34,7 +34,7 @@ $map = array(
 		"top" => 404, 
 		"width" => 191, 
 		"height" => 164 
-	),	*/
+	),	
 	array( 
 		"id" =>  "arrow_right", 
 		"href" => "road2", 
@@ -80,6 +80,37 @@ $map = array(
 		"width" => 104, 
 		"height" => 168
 	),*/
+	array( 
+		"id" =>  "FwalamaiMall", 
+		"href" => "mall", 
+		"title" => "קניון פאולאמהי",
+		"left" => 25, 
+		"top" => 68, 
+		"width" => 244, 
+		"height" => 500
+		
+		),
+	/*
+	array( 
+		"id" =>  "FwalamaiInternatinolAirPort", 
+		"href" => "FWLAirport", 
+		"title" => "שדה התעופה הבינלאומי של פאולמאהי",
+		"left" => 737, 
+		"top" => 287, 
+		"width" => 205, 
+		"height" => 28 
+	),
+	*/
+	
+		array( 
+		"id" =>  "Road2", 
+		"href" => "road2", 
+		"title" => "לרחוב הבא",
+		"left" =>	848, 
+		"top" => 224, 
+		"width" => 71, 
+		"height" => 44
+	),
 	
 );
 
