@@ -39,6 +39,16 @@ $map = array(
 		"height" => 228 
 	),
 	
+		array( 
+		"id" =>  "shop_sovi", 
+		"href" => "shops/shop/sovi", 
+		"title" => "מזקרותיה - חנות מזקרות",
+		"left" => 656, 
+		"top" => 37, 
+		"width" => 209,
+		"height" => 228 
+	),
+	
 	array( 
 		"id" =>  "back", 
 		"href" => "welcome", 
