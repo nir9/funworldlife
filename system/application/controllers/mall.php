@@ -29,25 +29,44 @@ $map = array(
 		"height" => 221 
 	),
 	
-	array( 
-		"id" =>  "shop_fre", 
-		"href" => "shops/shop/fre", 
+	
+	array(
+		"id" => "shop_fre",
+		"href" => "shops/shop/fre",
 		"title" => "פאן רהיטים - חנות רהיטים",
-		"left" => 358, 
+		"left" => 356, 
 		"top" => 33, 
-		"width" => 207,
-		"height" => 228 
+		"width" => 211,
+		"height" => 227 
+		
 	),
 	
-		array( 
-		"id" =>  "shop_sovi", 
-		"href" => "shops/shop/sovi", 
+	
+	array(
+		"id" => "shop_sovi",
+		"href" => "shops/shop/sovi",
 		"title" => "מזקרותיה - חנות מזקרות",
-		"left" => 656, 
-		"top" => 37, 
-		"width" => 209,
-		"height" => 228 
+		"left" => 665, 
+		"top" => 39, 
+		"width" => 211,
+		"height" => 220 
+		
 	),
+	
+	
+	
+	
+	array(
+		"id" => "shop_elec",
+		"href" => "shops/shop/elec",
+		"title" => "אלאקטריק - חנות אלקטרוניקה",
+		"left" => 669, 
+		"top" => 350, 
+		"width" => 212,
+		"height" => 218 
+		
+	),
+	
 	
 	array( 
 		"id" =>  "back", 

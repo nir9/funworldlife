@@ -14,6 +14,7 @@ class Shops extends Funworldlife
 			'food' => array('מזונה - חנות מזון', 'shopkeeperfood.png'),
 			'fre' => array('פאן רהיטים - חנות רהיטים', ''),
 			'sovi' => array('מזקרותיה - חנות מזקרות', ''),
+			'elec' => array('אלאקטריקס - חנות מחשבים ודברי אלקטרניקה', ''),
 /*
 			'pet' => 'חנות חיות',
 			'telepone' => 'חנות טלפון', 
