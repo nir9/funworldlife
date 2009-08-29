@@ -20,6 +20,9 @@ class MY_Controller extends Controller {
 			$this->global_view_data["job_name"] = $this->UsersJobs->get_user_job($user_id);
 			
 		}
+		
+		$this->global_view_data["status_message"] = NULL;
+		
         //$this->load->model('Twitter_model', 'twitter');   
         //$this->global_view_data['twitter'] = $this->twitter->get_twitter_status();   
   
@@ -31,7 +34,10 @@ class MY_Controller extends Controller {
     function display_view($view, $local_data = array()) 
 	{   
         $data = array_merge($this->global_view_data, $local_data);
-        return $this->load->view($view, $data);   
+        $result = $this->load->view($view, $data); 
+		$this->global_view_data["status_message"] = NULL;
+		
+		return $result;
     }
 	
 	function get_job_name()
@@ -60,6 +66,11 @@ class MY_Controller extends Controller {
 	function redirect_to_main_page()
 	{
 		redirect("/welcome");
+	}
+	
+	function set_status_message($status_message)
+	{
+		$this->global_view_data["status_message"] = $status_message;
 	}
 }  
 ?>

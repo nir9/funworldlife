@@ -46,6 +46,23 @@ class ProductsModel extends Model
 		}
 	} 
 
+	function get_product_name($product_id)
+	{
+		$this->db->select("*");
+		$this->db->from($this->table_name);
+		$this->db->where("product_id = '$product_id'");
+		
+		$query = $this->db->get();
+		
+		if ($query->num_rows() > 0) {
+			$row = $query->row();
+			return $row->name;
+		}
+		else {
+			return NULL;
+		}		
+	}	
+	
 	function get_products_info($product_ids)
 	{
 		$this->db->select("*");

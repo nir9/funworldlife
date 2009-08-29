@@ -41,3 +41,11 @@ NAME="English" BORDER="0">
 <img src="<?php print base_url(); ?>images/Mini_Logo.png">
 </a>
 </div>
+
+<?php
+if ( isset($status_message) ) {
+	print "<div align='center' dir='rtl' style='background: red; width: 945'>";
+	print $status_message;
+	print "</div>";
+}
+?>

@@ -41,7 +41,7 @@ class Funworldlife extends MY_Controller {
 		if ($this->must_be_connected) {
 			if (!$this->is_user_connected()) {
 				redirect('/login/', 'refresh');
-				return;
+				return false;
 			}
 		}
 	
@@ -58,6 +58,8 @@ class Funworldlife extends MY_Controller {
 		$data["additional_css"] = $additional_css;
 		$data["additional_body"] = $additional_body;
 		$this->display_view('show_map', $data);
+		
+		return true;
 	}
 	
 	function add_money($money, $user_id=-1)

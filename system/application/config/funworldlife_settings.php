@@ -14,4 +14,15 @@
 	$config["FWL_house_price_color_gold"] = 476;
 	
 	$config["FWL_products_field_limit"] = 1000;
+	
+	$config["FWL_seconds_between_digs"] = 30;
+	$config["FWL_dig_chance_old_shoe"] = 20;
+	$config["FWL_dig_chance_new_shoe"] = 40;
+	$config["FWL_dig_chance_crystal"] = 75;
+	$config["FWL_dig_chance_gold"] = 1000;
+	$config["FWL_dig_chance_1000_funcoins"] = 260;
+	$config["FWL_dig_product_id_old_shoe"] = 1;
+	$config["FWL_dig_product_id_new_shoe"] = 1;
+	$config["FWL_dig_product_id_crystal"] = 1;
+	$config["FWL_dig_product_id_gold"] = 1;
 ?>
