@@ -125,10 +125,10 @@ $map = array(
 		"id" => "dig",
 		"href" => "road4/dig",
 		"title" => "חפור באדמה",
-		"left" => 400, 
-		"top" => 200, 
-		"width" => 100, 
-		"height" => 100
+		"left" => 681, 
+		"top" => 100, 
+		"width" => 235, 
+		"height" => 87
 	),
 );
 

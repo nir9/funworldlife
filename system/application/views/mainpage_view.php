@@ -9,6 +9,12 @@
 		<br><br>
 		<div style="background: cyan; width: 900; font-family: Arial;">
 		<b>חדשות האתר</b><br><br>
+		29/8/09:
+		<br>
+		<br>
+		
+		
+		היום נוסף מכרה ברחוב 4 שאפשר להסיג מוצרים בוא
 		28/8/09:
 		<br>
 		
