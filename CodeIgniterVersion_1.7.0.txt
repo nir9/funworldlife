@@ -1,1 +1,0 @@
-We are using CodeIgniter 1.7.0
