@@ -1,7 +1,7 @@
 
 <?php $this->load->view("header.php", $title) ?>
 
-		<div dir='rtl'><br>
+		<div><br>
 	<div align="center" dir="ltr" class="footer" style="background: cyan; width: 970;">
 	Funworldlife - Versions
 	</div>
@@ -11,11 +11,11 @@
 	V3.23 BETA 25/8/09
 	</div>
 	<br>
-	שיפור גרפיקת רחובות
+		Street graphics improved
 	<br>
-	לוגו פאן וורלד ליף שונה
+		Different Funworldlife logo
 	<br>
-    תיקון באג - בבתים לא היה אפשר לראות מוצרים.
+		Bug fix - wasn't possible to see products in houses
 	<br>
 	<br>
 	<div align="center" dir="ltr" class="footer" style="background: cyan; width: 970;">
@@ -23,31 +23,31 @@
 	</div>
 	<br>
 	<br>
-	תיקון באגים - בעבודת הזבל היה אפשר להרוויח כפול כסף
+		Bug fixes - in the garbage work it was possible to earn twice as much
 	<br>
-	שינוי - ברחוב 4 התבטל המדבר
+		Change - in road 4 the desert was cancelled
 	<br>
-	הוספה - הוסף מפת העולם ודף הראשי
+		Addition - new world map and home page
 	<br>
-	הוספה - נוספו עוד 15 רחובות סך הכול 20 רחובות
+		Addition - 15 new roads giving a total of 20
 	<br>
-	הוספה - בנית בתים ברחובות
+		Addition - building houses on roads
 	<br>
-	הוספה - השכרת דירות
+		Addition - renting apartments
 	<br>
 	<br>
 	<div align="center" dir="ltr" class="footer" style="background: cyan; width: 970;">
 	V3.00 BETA 1/1/09
 	</div>
 	<br>
-	שינוי - אכשיו יש אתר חדש
+		Change - now there is a new website
 	<br>
 	<br>
 	<div align="center" dir="ltr" class="footer" style="background: cyan; width: 970;">
 	V2.90 BETA 3/9/08
 	</div>
 	<br>
-	הוספה - חנויות אישיות
+		Addition - personal stores
 	<br>
 	<br>
 	<div align="center" dir="ltr" class="footer" style="background: cyan; width: 970;">
@@ -110,7 +110,7 @@
 	V2.00 BETA 3/6/07
 	</div>
 	<br>
-	שינוי - אכשיו יש אתר חדש
+		Change - now there is a new website
 	<br>
 	<br>
 	<div align="center" dir="ltr" class="footer" style="background: cyan; width: 970;">
@@ -138,7 +138,7 @@
 	V0.01 BETA 1/8/06
 	</div>
 	<br>
-	הקמת האתר Funworldlife
+		Funworldlife website is founded
 	
 		
 		<?php $this->load->view("footer.php", $title) ?>
